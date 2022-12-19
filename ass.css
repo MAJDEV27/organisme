@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(227, 227, 227);
 }
 #header-one{
     /*position: fixed;*/
@@ -50,4 +50,115 @@ p{
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
+}
+h5{
+    color: rgb(7, 7, 122);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.card-text{
+    color: rgb(161, 160, 160);
+    font-size: 1.3em;
+}
+.card-body{
+    height: 300px;
+}
+.title-section{
+    margin-top: 10px;
+    color: black;
+    font-size: 3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.chiffre{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.chiffre-liste{
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    height: 80px;
+    background:linear-gradient(to right, grey, rgb(242, 218, 218));
+    text-align: center;
+    color: rgb(98, 103, 103);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5% 5%;
+    padding-top: 5px;
+}
+@media (max-width:1024px){
+      .chiffre{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .title-section{
+        font-size: 2em;
+        text-align: center;
+      }
+      
+    .chiffre-liste{
+        width: auto;
+        font-size: small ;
+        justify-self:center;
+    }
+    .card-text{
+        font-size: 0.9em;
+    }
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:200px;
+    background: white;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.footer-one{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.logo-footer{
+    width: 150px;
+    height: 110px;
+    box-shadow: 1px 1px 2px 2px rgb(198, 198, 198);
+    border-radius: 3px;
+}
+
+.footer-two{
+    grid-column: 2;
+    grid-row: 1;
+}
+.footer-three{
+    grid-column: 3;
+    grid-row: 1;
+}
+.footer-four{
+    grid-column: 4;
+    grid-row: 1;
+}
+.liens-footer{
+    color: rgb(142, 140, 140);
+}
+.grid-footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.grid-footer a{
+    text-decoration: none;
+    color: rgb(208, 185, 155);
+}
+@media (max-width:1024px){
+    .grid-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:baseline;
+    }
+    .logo-footer{
+        display: none;
+    }
 }
